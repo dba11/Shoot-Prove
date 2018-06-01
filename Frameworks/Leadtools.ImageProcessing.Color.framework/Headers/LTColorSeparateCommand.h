@@ -1,0 +1,32 @@
+//
+//  LTColorSeparateCommand.h
+//  Leadtools.ImageProcessing.Color
+//
+//  Copyright © 1991-2016 LEAD Technologies, Inc. All rights reserved.
+//
+
+typedef NS_ENUM(NSInteger, LTColorSeparateCommandType) {
+    LTColorSeparateCommandTypeRgb   = 0x0000,
+    LTColorSeparateCommandTypeCmyk  = 0x0001,
+    LTColorSeparateCommandTypeHsv   = 0x0002,
+    LTColorSeparateCommandTypeHls   = 0x0003,
+    LTColorSeparateCommandTypeCmy   = 0x0004,
+    LTColorSeparateCommandTypeYuv   = 0x0005,
+    LTColorSeparateCommandTypeXyz   = 0x0006,
+    LTColorSeparateCommandTypeLab   = 0x0007,
+    LTColorSeparateCommandTypeYcrcb = 0x0008,
+    LTColorSeparateCommandTypeSct   = 0x0009,
+};
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface LTColorSeparateCommand : LTRasterCommand
+
+@property (nonatomic, assign)                     LTColorSeparateCommandType type;
+@property (nonatomic, strong, readonly, nullable) LTRasterImage *destinationImage;
+
+- (instancetype)initWithType:(LTColorSeparateCommandType)type NS_DESIGNATED_INITIALIZER;
+
+@end
+
+NS_ASSUME_NONNULL_END

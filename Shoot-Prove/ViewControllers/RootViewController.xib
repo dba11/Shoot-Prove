@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController">
+            <connections>
+                <outlet property="lblBuildInfo" destination="YMc-jh-YYV" id="Jzc-eT-DIU"/>
+                <outlet property="lblTitle" destination="OP5-Ve-RjY" id="qY5-dU-w9n"/>
+                <outlet property="progressView" destination="Uya-Mv-rtb" id="aZl-C4-Bx1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shootandprove_300" translatesAutoresizingMaskIntoConstraints="NO" id="vaF-Vi-OgK">
+                    <rect key="frame" x="54" y="40" width="267" height="267"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="vaF-Vi-OgK" secondAttribute="height" multiplier="1:1" id="Wdw-GH-Ays"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shoot &amp; Prove" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OP5-Ve-RjY">
+                    <rect key="frame" x="8" y="315" width="359" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="1Wh-Rf-RFd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="28"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Build 1.0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMc-jh-YYV">
+                    <rect key="frame" x="8" y="638" width="359" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="2hL-mJ-ERP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Uya-Mv-rtb">
+                    <rect key="frame" x="112" y="370" width="150" height="2.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="jzA-0S-bzw"/>
+                    </constraints>
+                    <color key="progressTintColor" red="0.33333333329999998" green="0.54117647059999996" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="trackTintColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </progressView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vaF-Vi-OgK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="09K-pw-LYF"/>
+                <constraint firstAttribute="trailing" secondItem="YMc-jh-YYV" secondAttribute="trailing" constant="8" id="CcV-fU-NUh"/>
+                <constraint firstItem="Uya-Mv-rtb" firstAttribute="top" secondItem="OP5-Ve-RjY" secondAttribute="bottom" constant="15" id="Gf8-fV-BS5"/>
+                <constraint firstItem="YMc-jh-YYV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Q6G-kb-B7u"/>
+                <constraint firstItem="vaF-Vi-OgK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="R0b-uC-b1y"/>
+                <constraint firstItem="OP5-Ve-RjY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="atT-hm-dYB"/>
+                <constraint firstAttribute="bottom" secondItem="YMc-jh-YYV" secondAttribute="bottom" constant="8" id="frk-gh-qEi"/>
+                <constraint firstItem="vaF-Vi-OgK" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="40:100" id="kA2-hk-awm"/>
+                <constraint firstItem="Uya-Mv-rtb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kET-iS-hLA"/>
+                <constraint firstItem="OP5-Ve-RjY" firstAttribute="top" secondItem="vaF-Vi-OgK" secondAttribute="bottom" constant="8" id="mLy-PP-o1f"/>
+                <constraint firstAttribute="trailing" secondItem="OP5-Ve-RjY" secondAttribute="trailing" constant="8" id="uDe-lA-X8y"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="shootandprove_300" width="300" height="300"/>
+    </resources>
+</document>

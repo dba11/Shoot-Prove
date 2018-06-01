@@ -1,0 +1,305 @@
+/*************************************************************************
+ *
+ * SHOOT&PROVE CONFIDENTIAL
+ * __________________
+ *
+ *  [2016]-[2018] Shoot&Prove SA/NV
+ *  www.shootandprove.com
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains the property
+ * of Shoot&Prove SA/NV. The intellectual and technical concepts contained
+ * herein are proprietary to Shoot&Prove SA/NV.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Shoot&Prove SA/NV.
+ */
+"APPLICATION_TITLE" = "Shoot & Prove";
+"APPLICATION_VERSION" = "- versie %@.%@ -";
+
+//Register
+"REGISTER_DEVICE_DELETED" = "Uw toestel werd verwijderd van uw account, waarschijnlijk vanuit een ander apparaat. Indien u dit apparaat wenst te gebruiken moet u het opnieuw registreren.";
+"REGISTER_WELCOME" = "Welkom op Shoot&Prove !";
+"REGISTER_OAUTH" = "Gelieve in te loggen of zich in te schrijven door één van de volgende Identity Providers te kiezen:";
+"REGISTER_OR" = "- OF -";
+"REGISTER_EMAIL" = "Voer een e-mail adres en maak uw wachtwoord aan:";
+"REGISTER_EMAIL_PLACEHOLDER" = "Email adres";
+"REGISTER_EMAIL_PASSWORD_PLACEHOLDER" = "Paswoord";
+"REGISTER_EMAIL_CANT_BE_EMPTY" = "Voer uw email adres in.";
+"REGISTER_EMAIL_INVALID_EMAIL" = "Ongeldig email adres.";
+"REGISTER_EMAIL_PASSWORD_LENGTH" = "Het paswoord moet minimaal 8 tekens bevatten.";
+"REGISTER_EMAIL_NEW_ACCOUNT" = "Er bestaat geen account geregistreerd met dit email adres. Wenst u een nieuw account aan te maken ?";
+"REGISTER_EMAIL_NO_ACCOUNT" = "Er bestaat geen account geregistreerd met dit email adres.";
+"REGISTER_EMAIL_WRONG_PASSWORD" = "verkeerde e-mail of slecht wachtwoord";
+"REGISTER_PASSWORD_POLICY" = "Wachtwoord";
+"REGISTER_POLICY_CHANGED" = "Het Shoot&Prove wachtwoordbeveiligingsbeleid is geëvolueerd. Om u toe te staan ​​uw wachtwoord af te stemmen op deze nieuwe regels, is een e-mail verzonden naar uw adres met instructies om uw wachtwoord bij te werken.";
+"REGISTER_PASSWORD_RECOVERY_EMAIL_SENT" = "Een email werd verzonden naar uw email adres met de nodige instructies voor het herstellen van uw wachtwoord.";
+"REGISTER_TOO_MANY_REQUEST" = "De vraag voor het herstellen van uw wachtwoord is reeds verzonden.";
+
+"REGISTER_FACEBOOK_TITLE" = "Facebook";
+"REGISTER_GOOGLE_TITLE" = "Google";
+
+"REGISTER_PHONE_NEW_MESSAGE" = "Voeg uw mobiele telefoonnummer toe als een nieuwe identiteit met betrekking tot uw account. Dit zal uw identiteit afdwingen en een andere manier bieden om documenten met anderen uit te wisselen.\n\nDe procedure is snel en eenvoudig: Voer uw mobiele telefoonnummer in en klik op OK. Wanneer u de validatie via SMS ontvangt, typt u de code en bevestigt u.";
+"REGISTER_PHONE_PLACEHOLDER" = "Mobiele telefoonnummer (internationaal)";
+"REGISTER_PHONE_FORMAT_ERROR" = "Het telefoonnummer dat u ingevoerd hebt is ongeldig. Zorg ervoor dat u uw telefoonnummer in internationaal formaat invoert: +<landnummer><telefoonnummer>.";
+"REGISTER_PHONE_TYPE_CODE" = "Een bevestigingscode werd naar uw mobiele telefoon gestuurd per SMS. Geef de bevestigingscode hieronder in.";
+"REGISTER_PHONE_CODE_PLACEHOLDER" = "Validatiecode";
+"REGISTER_PHONE_CODE_INVALID" = "De ingetikte code is niet geldig. Zorg ervoor dat u de juiste bevestigingscode invoert.";
+"REGISTER_PHONE_NUMBER_ALREADY_EXISTS" = "Het telefoonnummer dat u hebt ingevoerd, is al gekoppeld aan een gebruikersaccount. Zorg ervoor dat u het juiste telefoonnummer hebt ingevoerd.";
+"REGISTER_PHONE_TOO_MANY_REQUEST" = "De validatiecode is te vaak naar dit telefoonnummer verzonden. Zorg ervoor dat u het juiste telefoonnummer hebt ingevoerd.";
+
+"REGISTER_TERMS_HAVE_CHANGED" = "De Gebruiksvoorwaarden werden gewijzigd. Neem even de tijd om dit document door te nemen en deze nieuwe versie te aanvaarden.";
+"REGISTER_TERMS_CONFIRM_MESSAGE" = "Gelieve te bevestigen dat u de nieuwe Gebruiksvoorwaarden gelezen en aanvaard hebt.";
+
+//New identity
+"NEW_IDENTITY_TITLE" = "Nieuwe identiteit";
+"NEW_IDENTITY_OAUTH" = "Gelieve één van de volgende Identity Providers te kiezen:";
+"NEW_IDENTITY_OR" = "- OF -";
+"NEW_IDENTITY_PHONE" = "Klik op de onderstaande knop om een ​​identiteitsnummer voor mobiele telefoons toe te voegen:";
+"NEW_IDENTITY_EMAIL" = "Voer een nieuw e-mail adres en paswoord in:";
+
+//Menu
+"MENU_INBOX" = "Taken in uitvoering";
+"MENU_SERVICES" = "Diensten";
+"MENU_FREE_CAPTURE" = "Een document aanmaken";
+"MENU_HISTORY" = "Historiek";
+"MENU_ACCOUNT" = "Account";
+"MENU_SETTINGS" = "Parameters";
+"MENU_TRASH" = "Prullenbak";
+"MENU_QRCODE" = "Scan een QR code";
+
+//Task views
+"INBOX_NO_CONTENT" = "Deze pagina geeft een overzicht van alle lopende taken die u moet voltooien en voltooien en van alle berichten die u van andere gebruikers ontvangt.\n\nOm deze lijst zo actueel mogelijk te krijgen, moet u ervoor zorgen dat de Push-meldingen zijn ingeschakeld voor de App.";
+"TRASH_NO_CONTENT" = "Op deze pagina worden alle taken weergegeven die u hebt weggegooid, hetzij vanuit de \"Taken in uitvoering\" of vanuit de \"Historiek\".\n\nU kunt naar links vegen elke taak die hier wordt vermeld om deze te herstellen of te verwijderen definitief.";
+"HISTORY_NO_CONTENT_1" = "Op deze pagina worden alle taken weergegeven die u hebt voltooid en voltooid.\n\nTaken die u van andere gebruikers hebt ontvangen of waarmee u bent begonnen vanuit een service, worden automatisch gesynchroniseerd met onze server en verzonden naar hun indieners.\nPersonal tasks, gecreëerd vanuit het menu \"Taken in uitvoering\", zijn beveiligd op onze server als u een Premium, een Pro of een Entreprise gebruiker bent.";
+"HISTORY_NO_CONTENT_2" = "Wanneer een taak wordt voltooid en hier wordt vermeld, wordt automatisch een PDF gegenereerd die u kunt uitwisselen met anderen of zelfs uw favoriete Cloud station kunt opslaan: Dropbox, Google Drive, iCloud, enz.";
+"ERROR_NO_RENDITION" = "De PDF versie van het document werd niet gevonden op de locatie %@. Wacht tot de synchronisatie is voltooid.";
+
+//Free task
+"FREE_TASK_EMPTY_TITLE" = "Nieuw document";
+"FREE_TASK_DESCRIPTION" = "Document gecreëerd met de Shoot&Prove mobiele applicatie.";
+"FREE_TASK_PICTURE_TITLE" = "Foto";
+"FREE_TASK_SCAN_TITLE" = "Document";
+"FREE_TASK_FORM_TITLE" = "Index";
+"FREE_TASK_FORM_DESCRIPTION" = "Index";
+"FREE_TASK_INDEX_TITLE" = "Titel";
+"FREE_TASK_INDEX_DESCRIPTION" = "Beschrijving";
+"FREE_TASK_INDEX_DATE" = "Datum";
+"FREE_TASK_NO_CONTENT" = "Om uw document aan te maken : neem de beelden op en digitaliseer de pagina’s.\n\nVooraleer u uw document opslaat in de \"Historiek\", kunt u de volgorde van de pagina’s herschikken.\n\nPas de camera en scanner instellingen aan voor de best mogelijke resultaten.";
+"FREE_TASK_REMAINING_PAGES" = "%d overblijvende pagina's...";
+"FREE_TASK_REMAINING_PAGE" = "%d pagina overblijft...";
+"FREE_TASK_FINALIZED" = "Het document wordt gefinaliseerd. Zodra het certificeringsproces afgelopen is, zal het document beschikbaar zijn in uw historiek.";
+"WARNING_FREE_TASK_EXISTING_PAGES" = "Het document werd niet opgelagen.  Indien u het scherm verlaat zonder de gegevens op te slaan, zullen de beelden en/of pagina’s die u vastgelegd hebt verloren zijn. Bent u zeker dat u het schem nu wilt verlaten ?";
+
+//Services
+"SERVICES_NO_SERVICE" = "Een service is een vastlegproces dat wordt geleverd door een bedrijf of een administratie, zodat u gemakkelijk stap voor stap foto's kunt maken, pagina's van een document kunt scannen, een formulier kunt invullen en kunt certificeren om een ​​elektronisch origineel te produceren.\n\nAls u een service start, wordt een taak gemaakt en opgeslagen in de \"Taken in uitvoering\" pagina, totdat u deze voltooit en voltooit.\n\nNa voltooiing wordt het opgeslagen in uw \"Historiek\" pagina en automatisch verzonden naar het bedrijf of de administratie die de service heeft gemaakt.\n\nGeen enkele service geïnstalleerd op uw toestel. Gebruik de QR Code Reader om een service te installeren.";
+
+//Service
+"SERVICE_COST" = "Kosten";
+"SERVICE_NOT_ENOUGH_CREDITS" = "U beschikt niet over voldoende krediet om deze service op te starten.\nUw krediet: %@, Kosten voor deze service: %@.\nU kunt krediet aankopen via \"Account -> Mijn account beheren\".";
+
+//Services and Inbox
+"TASK_DELETE_DATE" = "Verwijderd op";
+"TASK_END_DATE" = "Beëindigd op";
+"TASK_LAST_UPDATE" = "Laatste update op";
+"TASK_PENDING" = "In afwachting van actie";
+"TASK_INFO_CANCELLED" = "De taken staan op wacht in uw takenlijst.";
+"TASK_INFO_INCOMPLETE" = "De taak is onvolledig en kan niet worden afgerond:\n";
+"TASK_INFO_INCOMPLETE_CAPTURE" = "- De opnamestap '%@' is onvolledig: vereiste afbeeldingen ontbreken.";
+"TASK_INFO_INCOMPLETE_FORM" = "- De formulierstap '%@' is onvolledig: verplichte velden ontbreken.";
+"TASK_INFO_FINALIZED" = "De taak wordt uitgevoerd. Het document zal beschikbaar zijn in uw historiek zodra het certificeringsproces voltooid is.";
+"TASK_ERROR_NO_SUBTASK" = "De configuratie van de taak of van de service is ongeldig daar er geen actie dient genomen te worden. Gelieve contact op te nemen met de leverancier van de service \"%@\" om de oorzaak uit te maken.";
+
+//Trash
+"TRASH_CONFIRM_DELETE_ALL" = "Alle taken in de prullenbak worden definitief verwijderd. Weet je zeker dat je ze allemaal wilt verwijderen ?";
+
+//QRCode reader
+"QRCODE_READER_SCAN_CODE" = "Scan een Shoot&Prove QR Code om een nieuwe service te registreren, een nieuwe taak te starten of om een coupon te valideren.";
+"QRCODE_ACCOUNT_UPDATED" = "Uw account werd geüpdatet met de coupon\nDe toepassing gaat opnieuw starten.";
+
+//URL Request
+"REQUEST_PARSE_ERROR" = "Er is een fout opgetreden tijdens het parseren van het verzoek";
+"REQUEST_GONE_ERROR" = "Het verzoek is al uitgevoerd of is ongeldig";
+"REQUEST_POST_ERROR" = "Er is een fout opgetreden tijdens het verwerken van het verzoek";
+
+//Account
+"ACCOUNT_LASTNAME_PLACEHOLDER" = "Achternaam";
+"ACCOUNT_FIRSTNAME_PLACEHOLDER" = "Voornaam";
+"ACCOUNT_IDENTITIES" = "Identiteiten";
+"ACCOUNT_DEVICES" = "Toestellen";
+"ACCOUNT_IAP" = "In-App Aankopen";
+"ACCOUNT_DEVICE_BUILD" = "Shoot&Prove versie %@";
+"ACCOUNT_DEVICE_LAST_USAGE" = "Laatste gebruik %@";
+"ACOUNT_DELETE_IDENTITY_MESSAGE" = "Bent u zeker dat u ze wil verwijderen ?";
+"ACCOUNT_DELETE_LAST_IDENTITY_MESSAGE" = "Het verwijderen van uw laatste identiteit zal tevens uw account verwijderen (al uw gegevens zullen verloren zijn). Bent u zeker dat u ze wil verwijderen ?";
+"ACCOUNT_DELETE_DEVICE_MESSAGE" = "Het verwijderen van een toestel zal tevens al de gegevens van dat toestel verwijderen. Uw account blijft beschikbaar op andere toestellen. Bent u zeker dat u het wilt verwijderen ?";
+"ACCOUNT_DELETE_CURRENT_DEVICE" = "Wanneer u dit toestel verwijdert zal u alle opgeslagen informatie verliezen. Uw account blijft beschikbaar op andere toestellen. Bent u zeker dat u het wilt verwijderen ?";
+"ACCOUNT_IDENTIFIER_COPIED" = "Uw identificator werd gekopieerd naar Clipboard. U kan het nu kopiëren waar nodig.";
+"ACCOUNT_TYPE" = "Type account";
+"ACCOUNT_TYPE_FREE" = "Gratis";
+"ACCOUNT_EXPIRATION" = "Vervaldatum";
+"ACCOUNT_EXPIRATION_VALUE" = "%@ (%ld dagen over)";
+"ACCOUNT_CREDITS" = "Krediet";
+"ACCOUNT_TRANSACTION_CONTROL_ERROR" = "Wij konden de aankoop van het product \"%@\" niet valideren bij Apple. De volgende controle fout verschijnt: %@\nU kunt het product hetzij opnieuw selecteren teneinde het bij iTunes te herstellen en de validatie opnieuw te starten (geen bijkomende kosten), hetzij wachten tot de toepassing het zelf probeert totdat de validatie verkregen wordt. Indien u uw product niet in een redelijke termijn kan ophalen, aarzel niet met ons contact op te nemen.";
+
+//Settings
+"SETTINGS_PICTURE" = "Beeldverwerking";
+"SETTINGS_PICTURE_SIZE" = "Foto afmeting";
+"SETTINGS_SCANNER_PAPER_SIZE" = "Afmeting van het document";
+"SETTINGS_SCANNER_PAPER_SIZE_A4" = "A4";
+"SETTINGS_SCANNER_PAPER_SIZE_A5" = "A5";
+"SETTINGS_SCANNER_PAPER_SIZE_ID1" = "ID-1";
+"SETTINGS_SCANNER_PAPER_SIZE_ANY" = "Anders";
+"SETTINGS_SCANNER_RESOLUTION" = "Scan Resolutie";
+"SETTINGS_SCANNER_RESOLUTION_150" = "150 dpi";
+"SETTINGS_SCANNER_RESOLUTION_200" = "200 dpi";
+"SETTINGS_SCANNER_RESOLUTION_300" = "300 dpi";
+"SETTINGS_SCANNER_COLOR_MODE" = "Kleurmodus";
+"SETTINGS_SCANNER_COLOR_MODE_BW" = "Z&W";
+"SETTINGS_SCANNER_COLOR_MODE_GREY" = "Grijs";
+"SETTINGS_SCANNER_COLOR_MODE_COLOR" = "Kleur";
+"SETTINGS_SCANNER_AUTO" = "Automatische scanmodus.";
+"SETTINGS_CERTIFICATION" = "Certificering Opties";
+"SETTINGS_CERTIFICATION_WATERMARK" = "Print filigraan op foto/document";
+"SETTINGS_CERTIFICATION_ACCURACY" = "Minimum Precisie";
+"SETTINGS_CERTIFICATION_ACCURACY_UNIT" = "Meters";
+"SETTINGS_ITUNES_SHARE" = "Uitwisselingsmogelijkheden";
+"SETTINGS_ITUNES_SHARE_FILES" = "Paginabestanden uitwisselen (jpeg/tiff)";
+"SETTINGS_ITUNES_SHARE_RENDITIONS" = "Bewerkingen uitwisselen (pdf)";
+"SETTINGS_TEST_MODE" = "Test Opties";
+"SETTINGS_USE_TEST_SERVER" = "Gebruik de test server";
+"SETTINGS_USE_DEV_SERVER" = "Gebruik de dev server";
+
+//*************************************************************
+
+//Device authorizations messages
+"DEVICE_CAMERA_DISABLED" = "De toegang tot het fototoestel werd geweigerd voor de toepassing.";
+"DEVICE_LOCATION_DISABLED" = "De toegang tot de locatie dienst werd geweigerd voor de toepassing.";
+"DEVICE_OPEN_SETTINGS" = "Wenst u de instellingen van het toestel te openen om de nodige toegangen te activeren ?";
+
+//Capture
+"CAPTURE_TASK_REQUIRED" = "Vereist";
+"CAPTURE_TASK_OPTIONAL" = "Optioneel";
+"CAPTURE_TASK_PAGE" = "Pagina %d/%d";
+"CAPTURE_TASK_PICTURE" = "Beeld %d/%d";
+
+//Scanner
+"SCANNER_LAYOUT_GUIDE_TOP" = "TOP";
+"SCANNER_LAYOUT_GUIDE_BOTTOM" = "LAAG";
+"SCANNER_PAGE" = "%d pagina";
+"SCANNER_PAGES" = "%d pagina's";
+
+//Task details
+"TASK_DETAILS_PAGE" = "Pagina";
+"TASK_DETAILS_HASH" = "Hash (SHA1)";
+"TASK_DETAILS_ACCURACY_UNIT" = "m";
+"TASK_DETAILS_CERTIFIED" = "Gecertificeerd zonder fouten";
+"TASK_DETAILS_NOT_CERTIFIED" = "Niet gecertificeerd !";
+"TASK_DETAILS_CERTIFIED_WITH_ERRORS" = "Gecertificeerd met fouten";
+"TASK_DETAILS_NA" = "Niet van toepassing";
+"TASK_DETAILS_SELECT" = "Selecteer";
+
+//Task notification
+"TASK_NOTIFICATION_MESSAGE" = "U kreeg een nieuwe taak van %@: %@\nKosten: %@ credit%@.";
+"TASK_NOTIFICATION_QUESTION" = "Wenst u deze nu te openen ?";
+
+//Map types
+"MAP_TYPE_STANDARD" = "Standaard";
+"MAP_TYPE_SATELLITE" = "Satelliet";
+"MAP_TYPE_HYBRID" = "Hybride";
+
+//Certification errors
+"CERTIFICATION_ERROR_NO_DATA" = "Kan geen lege afbeelding certificeren (geen gegevens verstrekt).";
+"CERTIFICATION_ERROR_MISSING_LOCATION" = "Kan een geldige locatie niet tijdig ophalen.";
+"CERTIFICATION_ERROR_DENIED_LOCATION" = "Locatieservice is geweigerd voor de toepassing.";
+"CERTIFICATION_ERROR_LARGER_ACCURACY" = "De locatienauwkeurigheid is groter dan de gevraagde nauwkeurigheid.";
+"CERTIFICATION_ERROR_MISSING_TIMESTAMP" = "Kon te zijner tijd geen geldige tijdstempel van internet ophalen. Apparaatklok is in de plaats gebruikt.";
+"CERTIFICATION_ERROR_MISSING_WATERMARK" = "Kan het watermerk niet toepassen op de afbeelding.";
+"CERTIFICATION_ERROR_MISSING_EXIF" = "Kan de EXIF-gegevens van de afbeelding niet invullen.";
+
+//*************************************************************
+
+//date/time picker
+"DATE_TIME_PICKER_TITLE_DUAL" = "Kies datum en uur";
+"DATE_TIME_PICKER_TITLE_DATE" = "Kies datum";
+"DATE_TIME_PICKER_TITLE_TIME" = "Kies uur";
+
+//Gravatar Picker
+"GRAVATAR_PICKER_MESSAGE" = "Geef uw gravatar email adres in. Indien u er geen hebt, kan u er zelf een aanmaken.";
+"GRAVATAR_PICKER_URL" = "https://www.gravatar.com";
+"GRAVATAR_PICKER_EMAIL_PLACEHOLDER" = "Gravatar email adres";
+"GRAVATAR_ERROR_EMAIL_EMPTY" = "Geef uw email adres in.";
+"GRAVATAR_ERROR_EMAIL_INVALID" = "Gelieve een geldig email adres in te geven.";
+
+//=*************************************************************
+
+//InApp Purchase
+"IAP_DISABLED" = "De geïntegreerde aankopen werden op uw toestel buiten werking gesteld. U kunt geen kredieten voor het gebruik van diensten aankopen noch uw Premium Account, dat wij voor u aangemaakt hebben, activeren.";
+"IAP_PURCHASE_DONE" = "Aankoop verricht, update van uw account...";
+"IAP_PURCHASE_ERROR" = "Er is een fout opgetreden bij de validatie van uw aankoop: %@";
+
+//=*************************************************************
+
+//Sync messages
+"SYNC_SERVICE_DELETED" = "De service %@ is verwijderd uit uw account omdat deze door de eigenaar is verwijderd.";
+
+//=*************************************************************
+//Generic error messages
+"ERROR_GENERIC" = "Er is een fout opgetreden";
+"ERROR_400" = "Onjuist verzoek";
+"ERROR_401" = "Toegang geweigerd, een authenticatie is nodig";
+"ERROR_403" = "Verboden, uw account staat u niet toe om dat te doen";
+"ERROR_404" = "Niet gevonden, de bronnen zijn niet beschikbaar";
+"ERROR_405" = "HTTP-werkwoord gebruikt om toegang te krijgen tot deze pagina is niet toegestaan";
+"ERROR_406" = "De client accepteert het MIME-type van de gevraagde bron niet";
+"ERROR_407" = "Proxy-authenticatie vereist";
+"ERROR_410" = "De bron is niet meer beschikbaar, controleer of deze nog niet is gebruikt";
+"ERROR_412" = "Voorwaarde mislukt, op voorwaarde dat de informatie onjuist is";
+"ERROR_413" = "Verzoek entiteit te groot";
+"ERROR_414" = "Verzoek-URI te lang";
+"ERROR_415" = "Niet-ondersteund mediatype";
+"ERROR_416" = "Gevraagd bereik is niet bevredigend";
+"ERROR_417" = "Uitvoering mislukt";
+"ERROR_423" = "Beveiligde fout";
+"ERROR_429" = "Te veel verzoeken, probeer het later opnieuw.";
+"ERROR_500" = "Interne serverfout, probeer het later opnieuw";
+"ERROR_501" = "Koptekstwaarden geven een configuratie aan die niet is geïmplementeerd";
+"ERROR_502" = "Webserver ontving een ongeldige reactie terwijl hij fungeerde als een gateway of proxy";
+"ERROR_504" = "Gateway-time-out, probeer het later opnieuw";
+"ERROR_505" = "HTTP-versie niet ondersteund";
+
+//=*************************************************************
+
+//Buttons
+"BUTTON_OK" = "OK";
+"BUTTON_NO" = "Neen";
+"BUTTON_YES" = "Ja";
+"BUTTON_CANCEL" = "Annulering";
+"BUTTON_ACCEPT" = "Aanvaarden";
+"BUTTON_CONFIRM" = "Ja, ik bevestig";
+"BUTTON_VALIDATE" = "Bevestigen";
+"BUTTON_RETRY" = "Opnieuw proberen ?";
+"BUTTON_START_TASK" = "Start";
+"BUTTON_SHOW_IDENTIFIER" = "Toon identificator";
+"BUTTON_COPY_IDENTIFIER" = "Kopie";
+"BUTTON_FAKE" = "              ";
+"BUTTON_SETTINGS" = "Instellingen";
+"BUTTON_FORGOTTEN_PASSWORD" = "Vergeten paswoord";
+"BUTTON_SKIP" = "Overspringen";
+
+//Message box titles
+"TITLE_ERROR" = "Fout";
+"TITLE_WARNING" = "Waarschuwing";
+"TITLE_INFO" = "Informatie";
+"TITLE_NO_ACCOUNT" = "Geen Account";
+"TITLE_CANT_BUY" = "Aankoop niet mogelijk !";
+"TITLE_NOT_ENOUGH_CREDITS" = "Geen krediet meer";
+"TITLE_GRAVATAR" = "Gravatar";
+"TITLE_MAP" = "Locatie";
+"TITLE_CERTIFICATION_ERRORS" = "Certificeringsfouten";
+"TITLE_QRCODE_READER" = "Scan een QR Code";
+"TITLE_FREE_TASK" = "Een document aanmaken";
+"TITLE_CONFIRM" = "Gelieve te bevestigen";
+"TITLE_TERMS" = "Gebruiksvoorwaarden";
+"TITLE_REGISTER_PHONE" = "Telefoonnummer";
+"TITLE_REGISTER" = "Gelieve u te registreren";

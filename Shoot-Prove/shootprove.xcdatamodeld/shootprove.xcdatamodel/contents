@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="16B2555" minimumToolsVersion="Xcode 7.0" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="AbstractIndex" representedClassName="AbstractIndex" isAbstract="YES" syncable="YES">
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="key" attributeType="String" syncable="YES"/>
+        <attribute name="mandatory" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="type" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="subTaskForm" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SubTaskForm" inverseName="indexes" inverseEntity="SubTaskForm" syncable="YES"/>
+    </entity>
+    <entity name="AbstractService" representedClassName="AbstractService" isAbstract="YES" syncable="YES">
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="icon_data" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="icon_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastUpdate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="permanent" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="provider" attributeType="String" syncable="YES"/>
+        <attribute name="sourceDevice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" attributeType="String" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="subTasks" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="AbstractSubTask" inverseName="abstractTask" inverseEntity="AbstractSubTask" syncable="YES"/>
+    </entity>
+    <entity name="AbstractSubTask" representedClassName="AbstractSubTask" isAbstract="YES" syncable="YES">
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="title" attributeType="String" syncable="YES"/>
+        <attribute name="type" attributeType="String" syncable="YES"/>
+        <relationship name="abstractTask" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AbstractService" inverseName="subTasks" inverseEntity="AbstractService" syncable="YES"/>
+    </entity>
+    <entity name="AbstractSubTaskCapture" representedClassName="AbstractSubTaskCapture" isAbstract="YES" parentEntity="AbstractSubTask" syncable="YES">
+        <attribute name="maxItems" attributeType="Integer 16" defaultValueString="1" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="minItems" attributeType="Integer 16" defaultValueString="1" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="uuid" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CaptureImage" representedClassName="CaptureImage" syncable="YES">
+        <attribute name="accuracy" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="certified" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="creationDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="errorLevel" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="md5" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mimetype" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sha1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="type" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="uuid" attributeType="String" syncable="YES"/>
+        <relationship name="errors" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="CertificationError" inverseName="image" inverseEntity="CertificationError" syncable="YES"/>
+        <relationship name="task" maxCount="1" deletionRule="Nullify" destinationEntity="Task" inverseName="images" inverseEntity="Task" syncable="YES"/>
+    </entity>
+    <entity name="CertificationError" representedClassName="CertificationError" syncable="YES">
+        <attribute name="code" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="desc" attributeType="String" syncable="YES"/>
+        <attribute name="domain" attributeType="String" syncable="YES"/>
+        <relationship name="image" maxCount="1" deletionRule="Nullify" destinationEntity="CaptureImage" inverseName="errors" inverseEntity="CaptureImage" syncable="YES"/>
+    </entity>
+    <entity name="DefaultIndex" representedClassName="DefaultIndex" parentEntity="AbstractIndex" syncable="YES"/>
+    <entity name="DeleteImageReference" representedClassName="DeleteImageReference" syncable="YES">
+        <attribute name="index" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="md5" attributeType="String" syncable="YES"/>
+        <relationship name="task" maxCount="1" deletionRule="Nullify" destinationEntity="Task" inverseName="deleteImageReferences" inverseEntity="Task" syncable="YES"/>
+    </entity>
+    <entity name="Device" representedClassName="Device" syncable="YES">
+        <attribute name="buildNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastSeen" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nsToken" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="token" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uuid" attributeType="String" syncable="YES"/>
+        <relationship name="owner" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="devices" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Ident" representedClassName="Ident" syncable="YES">
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="owner" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="idents" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Item" representedClassName="Item" syncable="YES">
+        <attribute name="key" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="value" attributeType="String" syncable="YES"/>
+        <relationship name="listIndex" maxCount="1" deletionRule="Nullify" destinationEntity="ListIndex" inverseName="list" inverseEntity="ListIndex" syncable="YES"/>
+    </entity>
+    <entity name="ListIndex" representedClassName="ListIndex" parentEntity="AbstractIndex" syncable="YES">
+        <relationship name="list" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Item" inverseName="listIndex" inverseEntity="Item" syncable="YES"/>
+    </entity>
+    <entity name="Rendition" representedClassName="Rendition" syncable="YES">
+        <attribute name="creationDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="md5" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mimetype" attributeType="String" defaultValueString="application/pdf" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pageCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sha1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uuid" attributeType="String" syncable="YES"/>
+        <relationship name="task" maxCount="1" deletionRule="Nullify" destinationEntity="Task" inverseName="renditions" inverseEntity="Task" syncable="YES"/>
+    </entity>
+    <entity name="Service" representedClassName="Service" parentEntity="AbstractService" syncable="YES">
+        <attribute name="status" attributeType="Integer 16" defaultValueString="3" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="owner" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="services" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="SubTaskForm" representedClassName="SubTaskForm" parentEntity="AbstractSubTask" syncable="YES">
+        <relationship name="indexes" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="AbstractIndex" inverseName="subTaskForm" inverseEntity="AbstractIndex" syncable="YES"/>
+    </entity>
+    <entity name="SubTaskPicture" representedClassName="SubTaskPicture" parentEntity="AbstractSubTaskCapture" syncable="YES">
+        <attribute name="imageSize" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="SubTaskScan" representedClassName="SubTaskScan" parentEntity="AbstractSubTaskCapture" syncable="YES">
+        <attribute name="dpi" attributeType="Integer 16" minValueString="150" maxValueString="300" defaultValueString="200" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="format" attributeType="String" syncable="YES"/>
+        <attribute name="mode" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Task" representedClassName="Task" parentEntity="AbstractService" syncable="YES">
+        <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="serviceId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="status" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="deleteImageReferences" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="DeleteImageReference" inverseName="task" inverseEntity="DeleteImageReference" syncable="YES"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="CaptureImage" inverseName="task" inverseEntity="CaptureImage" syncable="YES"/>
+        <relationship name="owner" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="tasks" inverseEntity="User" syncable="YES"/>
+        <relationship name="renditions" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Rendition" inverseName="task" inverseEntity="Rendition" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="avatar" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="betaUser" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="devUser" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="eulaAcceptDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="eulaAcceptVersion" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastUsageDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="timeZone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uuid" attributeType="String" syncable="YES"/>
+        <relationship name="devices" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Device" inverseName="owner" inverseEntity="Device" syncable="YES"/>
+        <relationship name="idents" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Ident" inverseName="owner" inverseEntity="Ident" syncable="YES"/>
+        <relationship name="services" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Service" inverseName="owner" inverseEntity="Service" syncable="YES"/>
+        <relationship name="tasks" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Task" inverseName="owner" inverseEntity="Task" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AbstractIndex" positionX="0" positionY="0" width="128" height="135"/>
+        <element name="AbstractService" positionX="0" positionY="0" width="128" height="195"/>
+        <element name="AbstractSubTask" positionX="0" positionY="0" width="128" height="135"/>
+        <element name="AbstractSubTaskCapture" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="CaptureImage" positionX="0" positionY="0" width="128" height="285"/>
+        <element name="CertificationError" positionX="0" positionY="0" width="128" height="105"/>
+        <element name="DefaultIndex" positionX="0" positionY="0" width="128" height="45"/>
+        <element name="DeleteImageReference" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="Device" positionX="0" positionY="0" width="128" height="180"/>
+        <element name="Ident" positionX="0" positionY="0" width="128" height="105"/>
+        <element name="Item" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="ListIndex" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="Rendition" positionX="0" positionY="0" width="128" height="165"/>
+        <element name="Service" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="SubTaskForm" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="SubTaskPicture" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="SubTaskScan" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="Task" positionX="0" positionY="0" width="128" height="165"/>
+        <element name="User" positionX="0" positionY="0" width="128" height="270"/>
+    </elements>
+</model>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FreeCaptureViewController">
+            <connections>
+                <outlet property="btnScanPage" destination="ARR-es-c6A" id="gXp-5m-VaL"/>
+                <outlet property="btnTakePicture" destination="PvT-a8-xxr" id="Gzm-LA-ngO"/>
+                <outlet property="collectionView" destination="KAH-0A-gRi" id="nB7-Gh-RRY"/>
+                <outlet property="lblRemainingPages" destination="IOj-eb-7ay" id="xOx-mq-aE8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="KAH-0A-gRi">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9Ob-qd-51L">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OhC-S9-rMf">
+                    <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARR-es-c6A" customClass="ShadowButton">
+                            <rect key="frame" x="285" y="10" width="80" height="80"/>
+                            <color key="backgroundColor" red="0.33333333329999998" green="0.54117647059999996" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="5If-47-u3F"/>
+                                <constraint firstAttribute="height" constant="80" id="Njf-rq-ZYK"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="scanner"/>
+                            <connections>
+                                <action selector="scanPage:" destination="-1" eventType="touchUpInside" id="XeT-By-npg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PvT-a8-xxr" customClass="ShadowButton">
+                            <rect key="frame" x="185" y="10" width="80" height="80"/>
+                            <color key="backgroundColor" red="0.33333333329999998" green="0.54117647059999996" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="0kf-xO-zBZ"/>
+                                <constraint firstAttribute="height" constant="80" id="IvW-0i-2nK"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="picture"/>
+                            <connections>
+                                <action selector="takePicture:" destination="-1" eventType="touchUpInside" id="Rol-cd-OPf"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ARR-es-c6A" firstAttribute="centerY" secondItem="OhC-S9-rMf" secondAttribute="centerY" id="0aN-z3-qEU"/>
+                        <constraint firstItem="ARR-es-c6A" firstAttribute="leading" secondItem="PvT-a8-xxr" secondAttribute="trailing" constant="20" id="B7N-jt-XWU"/>
+                        <constraint firstAttribute="trailing" secondItem="ARR-es-c6A" secondAttribute="trailing" constant="10" id="JyD-Ak-R6F"/>
+                        <constraint firstItem="PvT-a8-xxr" firstAttribute="centerY" secondItem="OhC-S9-rMf" secondAttribute="centerY" id="UVj-6y-5YW"/>
+                        <constraint firstAttribute="height" constant="100" id="gGT-cx-Vcz"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 page remaining" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOj-eb-7ay">
+                    <rect key="frame" x="87" y="492" width="200" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="VAk-2n-sNy"/>
+                        <constraint firstAttribute="height" constant="35" id="cv0-Oc-uFe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.33333333329999998" green="0.54117647059999996" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OhC-S9-rMf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3Tw-9j-eAy"/>
+                <constraint firstAttribute="trailing" secondItem="OhC-S9-rMf" secondAttribute="trailing" id="7cm-t4-1QO"/>
+                <constraint firstItem="OhC-S9-rMf" firstAttribute="top" secondItem="IOj-eb-7ay" secondAttribute="bottom" constant="40" id="ClN-v1-fTg"/>
+                <constraint firstAttribute="trailing" secondItem="KAH-0A-gRi" secondAttribute="trailing" id="IDg-SE-8rl"/>
+                <constraint firstAttribute="bottom" secondItem="KAH-0A-gRi" secondAttribute="bottom" id="Kzf-Bh-gdc"/>
+                <constraint firstItem="IOj-eb-7ay" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NOB-jI-qLg"/>
+                <constraint firstAttribute="bottom" secondItem="OhC-S9-rMf" secondAttribute="bottom" id="kKJ-Ic-uKl"/>
+                <constraint firstItem="KAH-0A-gRi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="w0e-VR-VM5"/>
+                <constraint firstItem="KAH-0A-gRi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="z4s-tQ-Aj2"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="113.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="picture" width="36" height="36"/>
+        <image name="scanner" width="36" height="36"/>
+    </resources>
+</document>

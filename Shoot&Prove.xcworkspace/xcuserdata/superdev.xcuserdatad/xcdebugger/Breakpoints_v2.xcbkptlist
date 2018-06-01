@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Shoot-Prove/ViewControllers/RegisterPhoneViewController.m"
+            timestampString = "539187033.739237"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "262"
+            endingLineNumber = "262"
+            landmarkName = "-validate:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[RegisterPhoneViewController validate:]"
+                  moduleName = "Shoot&amp;Prove"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Works/iOS/Shoot&amp;Prove/Shoot-Prove/ViewControllers/RegisterPhoneViewController.m"
+                  timestampString = "542209855.181612"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "262"
+                  endingLineNumber = "262"
+                  offsetFromSymbolStart = "252">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__40-[RegisterPhoneViewController validate:]_block_invoke"
+                  moduleName = "Shoot&amp;Prove"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Works/iOS/Shoot&amp;Prove/Shoot-Prove/ViewControllers/RegisterPhoneViewController.m"
+                  timestampString = "542209855.1846761"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "264"
+                  endingLineNumber = "264"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

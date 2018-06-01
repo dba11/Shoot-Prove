@@ -1,0 +1,305 @@
+/*************************************************************************
+ *
+ * SHOOT&PROVE CONFIDENTIAL
+ * __________________
+ *
+ *  [2016]-[2018] Shoot&Prove SA/NV
+ *  www.shootandprove.com
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains the property
+ * of Shoot&Prove SA/NV. The intellectual and technical concepts contained
+ * herein are proprietary to Shoot&Prove SA/NV.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Shoot&Prove SA/NV.
+ */
+"APPLICATION_TITLE" = "Shoot&Prove";
+"APPLICATION_VERSION" = "- version %@.%@ -";
+
+//Register
+"REGISTER_DEVICE_DELETED" = "The current device has been deleted from your account, probably from another device. You must register again if you wish to use this device again.";
+"REGISTER_WELCOME" = "Welcome to Shoot&Prove !";
+"REGISTER_OAUTH" = "Please login or register using one of the following identity providers:";
+"REGISTER_OR" = "- OR -";
+"REGISTER_EMAIL" = "Type in a valid email address and create your password.";
+"REGISTER_EMAIL_PLACEHOLDER" = "Email address";
+"REGISTER_EMAIL_PASSWORD_PLACEHOLDER" = "Password";
+"REGISTER_EMAIL_CANT_BE_EMPTY" = "Please type in your email address.";
+"REGISTER_EMAIL_INVALID_EMAIL" = "Invalid email address.";
+"REGISTER_EMAIL_PASSWORD_LENGTH" = "The password must contain 8 characters as least.";
+"REGISTER_EMAIL_NEW_ACCOUNT" = "There is no existing account with this email address. Do you wish to create a new account ?";
+"REGISTER_EMAIL_NO_ACCOUNT" = "There is no existing account with this email address.";
+"REGISTER_EMAIL_WRONG_PASSWORD" = "Wrong email or bad password";
+"REGISTER_PASSWORD_POLICY" = "Password";
+"REGISTER_POLICY_CHANGED" = "The Shoot&Prove password policy has changed. In order to comply with this new policy, an email has been sent to your mailbox with the necessary instructions in order to allow you to define a new password.";
+"REGISTER_PASSWORD_RECOVERY_EMAIL_SENT" = "An email has been sent to your address with the necessary instructions to recover your password.";
+"REGISTER_TOO_MANY_REQUEST" = "The password recovery request has already been sent.";
+
+"REGISTER_FACEBOOK_TITLE" = "Facebook";
+"REGISTER_GOOGLE_TITLE" = "Google";
+
+"REGISTER_PHONE_NEW_MESSAGE" = "Add your mobile phone number as a new identity related to your account. This will enforce your identity and provide another way to exchange documents with others.\n\nThe procedure is quick and easy: Type in your mobile phone number and click OK. As you receive the validatio via SMS, type in the code and confirm.";
+"REGISTER_PHONE_PLACEHOLDER" = "Phone number (international)";
+"REGISTER_PHONE_FORMAT_ERROR" = "The phone number you have typed in is not valid. Please make sure you typed in your phone number in international format: +<country code><phone number>.";
+"REGISTER_PHONE_TYPE_CODE" = "An SMS with a validation code has been sent to your mobile. Please type in the validation code below.";
+"REGISTER_PHONE_CODE_PLACEHOLDER" = "Validation Code";
+"REGISTER_PHONE_CODE_INVALID" = "The code typed in is not valid. Please make sure you have typed in the validation code you have received.";
+"REGISTER_PHONE_NUMBER_ALREADY_EXISTS" = "The phone number you have typed in is already associated to a user account. Please make sure you have typed the correct phone number.";
+"REGISTER_PHONE_TOO_MANY_REQUEST" = "The validation code has been sent too many times to this phone number. Please make sure you have type the correct phone number.";
+
+"REGISTER_TERMS_HAVE_CHANGED" = "The Terms of Use have changed. Please take some time to read this document and accept this new version.";
+"REGISTER_TERMS_CONFIRM_MESSAGE" = "Please confirm that you have read and accepted the Terms of Use.";
+
+//New identity
+"NEW_IDENTITY_TITLE" = "New identity";
+"NEW_IDENTITY_OAUTH" = "Please choose one of the following identity providers:";
+"NEW_IDENTITY_OR" = "- OR -";
+"NEW_IDENTITY_PHONE" = "Click the button below to add a mobile phone number identity:";
+"NEW_IDENTITY_EMAIL" = "Type in a new email address and a password:";
+
+//Menu
+"MENU_INBOX" = "Tasks in progress";
+"MENU_SERVICES" = "Services";
+"MENU_FREE_CAPTURE" = "Create a document";
+"MENU_HISTORY" = "History";
+"MENU_ACCOUNT" = "Account";
+"MENU_SETTINGS" = "Settings";
+"MENU_TRASH" = "Recycle Bin";
+"MENU_QRCODE" = "Scan a QR Code";
+
+//Task views
+"INBOX_NO_CONTENT" = "This page lists all tasks in progress that you must complete and finalize, as well as all messages you may receive from other users.\n\nIn order to get this list as up to date as possible, please make sure that the Push notifications are enabled for the App.";
+"TRASH_NO_CONTENT" = "This page lists all tasks that you have trashed, either from the \"Tasks in progress\" or from the \"History\".\n\nYou can swipe to the left each task listed here in order to either restore or delete it definitively.";
+"HISTORY_NO_CONTENT_1" = "This page lists all tasks that you haved completed and finalized.\n\nTasks that you have received from other users, or that you have started from a service, are automatically synchronized with our server and sent to their petitioners.\nPersonal tasks, created from the menu \"Create a document\", are secured on our server if your are a Premium, a Pro or an Entreprise user.";
+"HISTORY_NO_CONTENT_2" = "Whenever a task is finalized and listed here, a PDF rendition is automatically generated to provide you a document that you can exchange with others or even save to your favorite Cloud drive: Dropbox, Google Drive, iCloud, etc.";
+"ERROR_NO_RENDITION" = "The PDF version of the document does not exist at the specified path: %@. Please wait for the synchronization to finish.";
+
+//Free task
+"FREE_TASK_EMPTY_TITLE" = "New document";
+"FREE_TASK_DESCRIPTION" = "Document created with Shoot&Prove mobile application.";
+"FREE_TASK_PICTURE_TITLE" = "Document picture";
+"FREE_TASK_SCAN_TITLE" = "Document page";
+"FREE_TASK_FORM_TITLE" = "Properties";
+"FREE_TASK_FORM_DESCRIPTION" = "Document properties";
+"FREE_TASK_INDEX_TITLE" = "Title";
+"FREE_TASK_INDEX_DESCRIPTION" = "Description";
+"FREE_TASK_INDEX_DATE" = "Date";
+"FREE_TASK_NO_CONTENT" = "Capture photos and scan pages of a document to create your certified document.\n\nYou will be able to reorder the pages of the document before saving it in your \"History\”.\n\nAdjust the camera and scanner settings to get the best possible results.";
+"FREE_TASK_REMAINING_PAGES" = "%d pages remaining...";
+"FREE_TASK_REMAINING_PAGE" = "%d page remaining...";
+"FREE_TASK_FINALIZED" = "The document is being finalized. It will be available in your history when the certification process is finished.";
+"WARNING_FREE_TASK_EXISTING_PAGES" = "Your document has not been saved. If you leave without saving, the pictures and/or pages you have captured will be lost. Are you sure you want to leave now ?";
+
+//Services
+"SERVICES_NO_SERVICE" = "A service is a capture process, provided by a company or an administration, so that you can easily, step by step, take photos, scan pages of a document, fill out a form, and certify them to produce an electronic original.\n\nWhen you start a service, a task is created and saved into your \"Tasks in progress\" page, until you have completed and finalized it.\n\nOnce finalized, it is saved into your \"History\" page and automatically sent to the company or administration that created the service.\n\nNo services are installed yet. Use the QR Code reader to install a service on your device.";
+
+//Service
+"SERVICE_COST" = "Cost";
+"SERVICE_NOT_ENOUGH_CREDITS" = "You don't have enough credit to run this service.\nYour credit: %@, service cost: %@.\nYou can buy more credit via \"Account -> Manage my account\".";
+
+//Services and Inbox
+"TASK_DELETE_DATE" = "Deleted on";
+"TASK_END_DATE" = "Finished on";
+"TASK_LAST_UPDATE" = "Last update on";
+"TASK_PENDING" = "Pending for action";
+"TASK_INFO_CANCELLED" = "The task has been set on hold in your tasks list.";
+"TASK_INFO_INCOMPLETE" = "The task is incomplete and cannot be finalized:\n";
+"TASK_INFO_INCOMPLETE_CAPTURE" = "- The capture step '%@' is incomplete: required images are missing.";
+"TASK_INFO_INCOMPLETE_FORM" = "- The form step '%@' is incomplete: required fields are missing.";
+"TASK_INFO_FINALIZED" = "The task is being finalized. The document will be available in your history when the certification process is done.";
+"TASK_ERROR_NO_SUBTASK" = "The task or service configuration is invalid as there is nothing to do. Please take contact with the provider \"%@\" to understand why.";
+
+//Trash
+"TRASH_CONFIRM_DELETE_ALL" = "All tasks listed in the trash will be deleted definitively. Are you sure you want to delete them all ?";
+
+//QRCode reader
+"QRCODE_READER_SCAN_CODE" = "Scan a Shoot&Prove QR code to regiter a new service, start a new task or validate a coupon.";
+"QRCODE_ACCOUNT_UPDATED" = "Your accound has been updated with the coupon.\nThe application will now restart.";
+
+//URL Request
+"REQUEST_PARSE_ERROR" = "An error occured while parsing the request";
+"REQUEST_GONE_ERROR" = "The request has already been executed or is invalid";
+"REQUEST_POST_ERROR" = "An error occured while processing the request";
+
+//Account
+"ACCOUNT_LASTNAME_PLACEHOLDER" = "Lastname";
+"ACCOUNT_FIRSTNAME_PLACEHOLDER" = "Firstname";
+"ACCOUNT_IDENTITIES" = "Identities";
+"ACCOUNT_DEVICES" = "Devices";
+"ACCOUNT_IAP" = "In-App Purchase";
+"ACCOUNT_DEVICE_BUILD" = "Shoot&Prove version %@";
+"ACCOUNT_DEVICE_LAST_USAGE" = "Last use on %@";
+"ACOUNT_DELETE_IDENTITY_MESSAGE" = "Are you sure you want to delete this identity ?";
+"ACCOUNT_DELETE_LAST_IDENTITY_MESSAGE" = "Deleting your last identity will also delete your account (all your data will be lost). Are you sure you want to delete it ?";
+"ACCOUNT_DELETE_DEVICE_MESSAGE" = "Deleting a device will reset all data on the device. Your account will remain available on the other devices. Are you sure you want to delete it ?";
+"ACCOUNT_DELETE_CURRENT_DEVICE" = "Deleting your current device will reset all your local data. Your account will remain available on the other devices. Are you sure you want to delete it ?";
+"ACCOUNT_IDENTIFIER_COPIED" = "Your identifier has been copied to the Clipboard. You can now paste it anywhere needed.";
+"ACCOUNT_TYPE" = "Account type";
+"ACCOUNT_TYPE_FREE" = "Free";
+"ACCOUNT_EXPIRATION" = "Expiration date";
+"ACCOUNT_EXPIRATION_VALUE" = "%@ (%ld days left)";
+"ACCOUNT_CREDITS" = "Credits";
+"ACCOUNT_TRANSACTION_CONTROL_ERROR" = "We have not been able to validate the purchase of the product \"%@\" towards Apple. The following error occured: %@\nYou can either click again the product to get it restored from iTunes and retry the validation (no extra cost) or let the application retry later until the validation is successful. Do not hesitate to contact us if you don't get your product in a reasonable time.";
+
+//Settings
+"SETTINGS_PICTURE" = "Image Processing";
+"SETTINGS_PICTURE_SIZE" = "Picture Size";
+"SETTINGS_SCANNER_PAPER_SIZE" = "Scan Paper Size";
+"SETTINGS_SCANNER_PAPER_SIZE_A4" = "A4";
+"SETTINGS_SCANNER_PAPER_SIZE_A5" = "A5";
+"SETTINGS_SCANNER_PAPER_SIZE_ID1" = "ID-1";
+"SETTINGS_SCANNER_PAPER_SIZE_ANY" = "Other";
+"SETTINGS_SCANNER_RESOLUTION" = "Scan Resolution";
+"SETTINGS_SCANNER_RESOLUTION_150" = "150 dpi";
+"SETTINGS_SCANNER_RESOLUTION_200" = "200 dpi";
+"SETTINGS_SCANNER_RESOLUTION_300" = "300 dpi";
+"SETTINGS_SCANNER_COLOR_MODE" = "Scan Color Mode";
+"SETTINGS_SCANNER_COLOR_MODE_BW" = "B&W";
+"SETTINGS_SCANNER_COLOR_MODE_GREY" = "Grey";
+"SETTINGS_SCANNER_COLOR_MODE_COLOR" = "Color";
+"SETTINGS_SCANNER_AUTO" = "Enable Auto Scan";
+"SETTINGS_CERTIFICATION" = "Certification Options";
+"SETTINGS_CERTIFICATION_WATERMARK" = "Print filigree on picture/document";
+"SETTINGS_CERTIFICATION_ACCURACY" = "Location Minimum Accuracy";
+"SETTINGS_CERTIFICATION_ACCURACY_UNIT" = "meters";
+"SETTINGS_ITUNES_SHARE" = "Sharing Options";
+"SETTINGS_ITUNES_SHARE_FILES" = "Share images (jpeg/tiff)";
+"SETTINGS_ITUNES_SHARE_RENDITIONS" = "Share renditions (pdf)";
+"SETTINGS_TEST_MODE" = "Test Mode Options";
+"SETTINGS_USE_TEST_SERVER" = "Use test server";
+"SETTINGS_USE_DEV_SERVER" = "Use dev server";
+
+//=*************************************************************
+
+//Device authorizations messages
+"DEVICE_CAMERA_DISABLED" = "Access to the camera has been denied for the application.";
+"DEVICE_LOCATION_DISABLED" = "Access to the location service has been denied for the application.";
+"DEVICE_OPEN_SETTINGS" = "Do you want to open the device settings to grant the necessary access ?";
+
+//Capture
+"CAPTURE_TASK_REQUIRED" = "Required";
+"CAPTURE_TASK_OPTIONAL" = "Optional";
+"CAPTURE_TASK_PAGE" = "Page %d/%d";
+"CAPTURE_TASK_PICTURE" = "Picture %d/%d";
+
+//Scanner
+"SCANNER_LAYOUT_GUIDE_TOP" = "TOP";
+"SCANNER_LAYOUT_GUIDE_BOTTOM" = "BOTTOM";
+"SCANNER_PAGE" = "%d page";
+"SCANNER_PAGES" = "%d pages";
+
+//Task details
+"TASK_DETAILS_PAGE" = "Page";
+"TASK_DETAILS_HASH" = "Hash (SHA1)";
+"TASK_DETAILS_ACCURACY_UNIT" = "m";
+"TASK_DETAILS_CERTIFIED" = "Certified without error";
+"TASK_DETAILS_NOT_CERTIFIED" = "Not certified !";
+"TASK_DETAILS_CERTIFIED_WITH_ERRORS" = "Certified with errors";
+"TASK_DETAILS_NA" = "N/A";
+"TASK_DETAILS_SELECT" = "Select";
+
+//Task notification
+"TASK_NOTIFICATION_MESSAGE" = "You have received a new task from %@: %@\nCost: %@ credit%@.";
+"TASK_NOTIFICATION_QUESTION" = "Do you want to start this task now ?";
+
+//Map types
+"MAP_TYPE_STANDARD" = "Standard";
+"MAP_TYPE_SATELLITE" = "Satellite";
+"MAP_TYPE_HYBRID" = "Hybrid";
+
+//Certification errors
+"CERTIFICATION_ERROR_NO_DATA" = "Cannot certify an empty image (no data provided).";
+"CERTIFICATION_ERROR_MISSING_LOCATION" = "Could not retrieve a valid location in due time.";
+"CERTIFICATION_ERROR_DENIED_LOCATION" = "Location service has been denied for the application.";
+"CERTIFICATION_ERROR_LARGER_ACCURACY" = "The location accuracy is larger than the one requested.";
+"CERTIFICATION_ERROR_MISSING_TIMESTAMP" = "Could not retrieve a valid timestamp from the Internet in due time. Device clock has been used instead.";
+"CERTIFICATION_ERROR_MISSING_WATERMARK" = "Unable to apply the watermark to the image.";
+"CERTIFICATION_ERROR_MISSING_EXIF" = "Unable to fill in the image's EXIF data.";
+
+//=*************************************************************
+
+//date/time picker
+"DATE_TIME_PICKER_TITLE_DUAL" = "Select date & time";
+"DATE_TIME_PICKER_TITLE_DATE" = "Select date";
+"DATE_TIME_PICKER_TITLE_TIME" = "Select time";
+
+//Gravatar Picker
+"GRAVATAR_PICKER_MESSAGE" = "Type in your gravatar email address. If you don't have a gravatar, you can create your own on ";
+"GRAVATAR_PICKER_URL" = "https://www.gravatar.com";
+"GRAVATAR_PICKER_EMAIL_PLACEHOLDER" = "Gravatar email address";
+"GRAVATAR_ERROR_EMAIL_EMPTY" = "Please type in your email address.";
+"GRAVATAR_ERROR_EMAIL_INVALID" = "Please type in a valid email address.";
+
+//=*************************************************************
+
+//InApp Purchase
+"IAP_DISABLED" = "InApp Purchase is disabled on your device. You will not be able to purchase Services Usage Credits or activate the Premium Account that we have prepared for you.";
+"IAP_PURCHASE_DONE" = "Purchase successful, updating your account...";
+"IAP_PURCHASE_ERROR" = "An error occured while validating your purchase: %@";
+
+//=*************************************************************
+
+//Sync messages
+"SYNC_SERVICE_DELETED" = "The service %@ has been removed from your account as its has been deleted by its owner.";
+
+//=*************************************************************
+//Generic error messages
+"ERROR_GENERIC" = "An error occurred";
+"ERROR_400" = "Bad request";
+"ERROR_401" = "Access denied, an authentication is needed";
+"ERROR_403" = "Forbidden, your account does not allow you to do that";
+"ERROR_404" = "Not found, the ressources is not available";
+"ERROR_405" = "HTTP verb used to access this page is not allowed";
+"ERROR_406" = "Client does not accept the MIME type of the requested resource";
+"ERROR_407" = "Proxy authentication required";
+"ERROR_410" = "The resource is not available anymore, please check that it has not been used already";
+"ERROR_412" = "Precondition failed, provided informations are incorrect";
+"ERROR_413" = "Request entity too large";
+"ERROR_414" = "Request-URI too long";
+"ERROR_415" = "Unsupported media type";
+"ERROR_416" = "Requested range not satisfiable";
+"ERROR_417" = "Execution failed";
+"ERROR_423" = "Locked error";
+"ERROR_429" = "Too many requests, please try again later.";
+"ERROR_500" = "Internal server error, please try again later";
+"ERROR_501" = "Header values specify a configuration that is not implemented";
+"ERROR_502" = "Web server received an invalid response while acting as a gateway or proxy";
+"ERROR_504" = "Gateway timeout, please try again later";
+"ERROR_505" = "HTTP version not supported";
+
+//=*************************************************************
+
+//Buttons
+"BUTTON_OK" = "OK";
+"BUTTON_NO" = "No";
+"BUTTON_YES" = "Yes";
+"BUTTON_CANCEL" = "Cancel";
+"BUTTON_ACCEPT" = "Accept";
+"BUTTON_CONFIRM" = "Yes, I confirm";
+"BUTTON_VALIDATE" = "Confirm";
+"BUTTON_RETRY" = "Retry ?";
+"BUTTON_START_TASK" = "Start";
+"BUTTON_SHOW_IDENTIFIER" = "Show my identifier";
+"BUTTON_COPY_IDENTIFIER" = "Copy";
+"BUTTON_FAKE" = "              ";
+"BUTTON_SETTINGS" = "Settings";
+"BUTTON_FORGOTTEN_PASSWORD" = "Forgotten password";
+"BUTTON_SKIP" = "Skip";
+
+//Message box titles
+"TITLE_ERROR" = "Error";
+"TITLE_WARNING" = "Warning";
+"TITLE_INFO" = "Information";
+"TITLE_NO_ACCOUNT" = "No Account";
+"TITLE_CANT_BUY" = "You can't buy !";
+"TITLE_NOT_ENOUGH_CREDITS" = "Out of credit";
+"TITLE_GRAVATAR" = "Gravatar";
+"TITLE_MAP" = "Location";
+"TITLE_CERTIFICATION_ERRORS" = "Certification Errors";
+"TITLE_QRCODE_READER" = "Scan a QR Code";
+"TITLE_FREE_TASK" = "Create a document";
+"TITLE_CONFIRM" = "Please confirm";
+"TITLE_TERMS" = "Terms of Use";
+"TITLE_REGISTER_PHONE" = "Mobile Phone";
+"TITLE_REGISTER" = "Login or register";

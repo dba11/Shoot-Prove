@@ -1,0 +1,305 @@
+/*************************************************************************
+ *
+ * SHOOT&PROVE CONFIDENTIAL
+ * __________________
+ *
+ *  [2016]-[2018] Shoot&Prove SA/NV
+ *  www.shootandprove.com
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains the property
+ * of Shoot&Prove SA/NV. The intellectual and technical concepts contained
+ * herein are proprietary to Shoot&Prove SA/NV.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Shoot&Prove SA/NV.
+ */
+"APPLICATION_TITLE" = "Shoot & Prove";
+"APPLICATION_VERSION" = "- version %@.%@ -";
+
+//Register
+"REGISTER_DEVICE_DELETED" = "Cet appareil a été dissocié de votre compte, probablement depuis un autre appareil. Vous devez vous enregistrer de nouveau pour utiliser cet appareil.";
+"REGISTER_WELCOME" = "Bienvenue sur Shoot&Prove !";
+"REGISTER_OAUTH" = "Veuillez vous connecter ou vous inscrire en choisissant l'un des fournisseurs d'identités suivants:";
+"REGISTER_OR" = "- OU -";
+"REGISTER_EMAIL" = "Saisissez une adresse e-mail et créez un mot de passe:";
+"REGISTER_EMAIL_PLACEHOLDER" = "Adresse email";
+"REGISTER_EMAIL_PASSWORD_PLACEHOLDER" = "Mot de passe";
+"REGISTER_EMAIL_CANT_BE_EMPTY" = "Veuillez saisir une adresse email.";
+"REGISTER_EMAIL_INVALID_EMAIL" = "Adresse email non valide.";
+"REGISTER_EMAIL_PASSWORD_LENGTH" = "Le mot de passe doit contenir au moins 8 caractères.";
+"REGISTER_EMAIL_NEW_ACCOUNT" = "Il n'existe pas de compte avec cette adresse e-mail. Souhaitez-vous créer un nouveau compte ?";
+"REGISTER_EMAIL_NO_ACCOUNT" = "Il n'existe pas de compte avec cette adresse e-mail.";
+"REGISTER_EMAIL_WRONG_PASSWORD" = "Adresse email incorrect ou mauvais mot de passe.";
+"REGISTER_PASSWORD_POLICY" = "Mot de passe";
+"REGISTER_POLICY_CHANGED" = "La police de sécurité des mots de passe de Shoot&Prove a évolué. Pour vous permettre d'aligner votre mot de passe avec ces nouvelles règles, un email a été envoyé à votre addresse avec les instructions nécessaires à la mise à jour de votre mot de passe.";
+"REGISTER_PASSWORD_RECOVERY_EMAIL_SENT" = "Un email a été envoyé à votre adresse avec les instructions nécessaires à la récupération de votre mot de passe.";
+"REGISTER_TOO_MANY_REQUEST" = "La demande de récupération de votre mot de passe a déjà été envoyée.";
+
+"REGISTER_FACEBOOK_TITLE" = "Facebook";
+"REGISTER_GOOGLE_TITLE" = "Google";
+
+"REGISTER_PHONE_NEW_MESSAGE" = "Ajoutez votre numéro de téléphone mobile comme nouvelle identité associée à votre compte utilisateur. Cela renforce votre identité et offre une nouvelle manière d'échanger des documents avec des tiers.\n\nLa procédure est simple et rapide: saisissez votre numéro de mobile et cliquez sur OK. A la réception de la validation par SMS, saisissez le code et confirmez.";
+"REGISTER_PHONE_PLACEHOLDER" = "Numéro de téléphone (international)";
+"REGISTER_PHONE_FORMAT_ERROR" = "Le numéro de téléphone saisi n'est pas valide. Veuillez vous assurer de saisir un numéro de téléphone au format international: +<code pays><numéro de téléphone>.";
+"REGISTER_PHONE_TYPE_CODE" = "Un message SMS a été envoyé au numéro indiqué. Veuillez saisir ci-dessous le code d'activation fourni.";
+"REGISTER_PHONE_CODE_PLACEHOLDER" = "Code de validation";
+"REGISTER_PHONE_CODE_INVALID" = "Le code est incorrect. Veuillez vous assurer de saisir le code reçu par SMS.";
+"REGISTER_PHONE_NUMBER_ALREADY_EXISTS" = "Le numéro de téléphone saisi est déjà associé à un compte utilisateur. Veuillez vous assurer que vous avez saisi le bon numéro.";
+"REGISTER_PHONE_TOO_MANY_REQUEST" = "Le code de validation a été envoyé de trop nombreuses fois à ce numéro de téléphone. Veuillez vous assurer que vous avez saisi le bon numéro.";
+
+"REGISTER_TERMS_HAVE_CHANGED" = "Les Termes d'utilisation ont évolué. Veuillez prendre le temps de les lire et accepter cette nouvelle version.";
+"REGISTER_TERMS_CONFIRM_MESSAGE" = "Veuillez confirmer que vous avez lu et accepté les Termes d'Utilisation.";
+
+//New identity
+"NEW_IDENTITY_TITLE" = "Nouvelle identité";
+"NEW_IDENTITY_OAUTH" = "Veuillez sélectionner l'un des fournisseurs d'identités suivants:";
+"NEW_IDENTITY_OR" = "- OU -";
+"NEW_IDENTITY_PHONE" = "Cliquer le bouton ci-dessous pour ajouter une identité associée à votre numéro de téléphone mobile:";
+"NEW_IDENTITY_EMAIL" = "Saisissez une nouvelle adresse e-mail et un mot de passe:";
+
+//Menu
+"MENU_INBOX" = "Tâches en cours";
+"MENU_SERVICES" = "Services";
+"MENU_FREE_CAPTURE" = "Créer un document";
+"MENU_HISTORY" = "Historique";
+"MENU_ACCOUNT" = "Compte";
+"MENU_SETTINGS" = "Paramètres";
+"MENU_TRASH" = "Corbeille";
+"MENU_QRCODE" = "Scanner un QR Code";
+
+//Task views
+"INBOX_NO_CONTENT" = "Cette page liste toutes les tâches en cours que vous devez compléter et finaliser, ainsi que tous les messages que vous pourriez recevoir de la part d'autres utilisateurs.\n\nPour garantir une mise à jour régulière de cette liste, veuillez vous assurer que les notifications Push sont activées pour l'App.";
+"TRASH_NO_CONTENT" = "Cette page liste toutes les tâches que vous avez mis à la poubelle, soit depuis vos \"Tâches en cours\", soit depuis votre \"Historique\".\n\nVous pouvez faire glisser vers la gauche chaque tâche listée ici afin de la restaurer ou de la supprimer définitivement.";
+"HISTORY_NO_CONTENT_1" = "Cette page liste toutes les tâches que vous avez complétées et finalisées.\n\nLes tâches que vous avez reçues de la part d'autres utilisateurs, ou que vous avez démarrées depuis un service, sont automatiquement synchronisées avec notre serveur et envoyées à leurs commanditaires.\nLes tâches personnelles, créées depuis le menu \"Créer un document\", sont sécurisées sur notre serveur si vous disposez d'un compte Premium, Pro ou Entreprise.";
+"HISTORY_NO_CONTENT_2" = "Dès qu'une tâche est finalisée et listée ici, une publication PDF est générée automatiquement pour vous permettre de l'échanger librement avec d'autres personnes, ou même de la sauvegarder dans votre disque Cloud préféré: Dropbox, Google Drive, iCloud, etc.";
+"ERROR_NO_RENDITION" = "La version PDF du document est introuvable au chemin indiqué: %@. Veuillez attendre la fin de la synchronisation.";
+
+//Free task
+"FREE_TASK_EMPTY_TITLE" = "Nouveau document";
+"FREE_TASK_DESCRIPTION" = "Document créé avec l'application mobile Shoot&Prove.";
+"FREE_TASK_PICTURE_TITLE" = "Photos du document";
+"FREE_TASK_SCAN_TITLE" = "Pages du document";
+"FREE_TASK_FORM_TITLE" = "Propriétés";
+"FREE_TASK_FORM_DESCRIPTION" = "Propriétés du document";
+"FREE_TASK_INDEX_TITLE" = "Titre";
+"FREE_TASK_INDEX_DESCRIPTION" = "Description";
+"FREE_TASK_INDEX_DATE" = "Date";
+"FREE_TASK_NO_CONTENT" = "Capturez des photos et numérisez des pages pour créer votre document certifié.\n\nVous pourrez réorganiser l'ordre des pages du document avant de le sauvegarder dans votre \"Historique\".\n\nAdapter les \"Paramètres\" de l'appareil photo et du scanner afin d'obtenir les meilleures captures possibles.";
+"FREE_TASK_REMAINING_PAGES" = "%d pages restantes...";
+"FREE_TASK_REMAINING_PAGE" = "%d page restante...";
+"FREE_TASK_FINALIZED" = "Le document est en cours de finalisation. Il sera disponible dans votre historique lorsque le processus de certification sera terminé.";
+"WARNING_FREE_TASK_EXISTING_PAGES" = "Votre document n'a pas été enregistré. Si vous quittez sans enregistrer, les photos et/ou pages capturées seront perdues. Êtes-vous sûr de vouloir quitter maintenant ?";
+
+//Services
+"SERVICES_NO_SERVICE" = "Un service est un processus de capture, fourni par une entreprise ou une administration, pour vous permettre de facilement, étape par étape, prendre des photos, numériser les pages d'un document, compléter un formulaire et certifier l'ensemble afin de produire un original électronique.\n\nLorsque vous démarrez un service, une tâche est créée et enregistrée dans vos \"Tâches en cours\", jusqu'à ce que vous la complétiez et la finalisiez.\n\nUne fois finalisée, la tâche est sauvegardée dans votre \"Historique\" et envoyée automatiquement à l'entreprise ou l'administration qui a créé le service.\n\nAucun service n'est installé pour le moment. Utilisez le lecteur de QR Codes pour installer un service sur votre appareil.";
+
+//Service
+"SERVICE_COST" = "Coût";
+"SERVICE_NOT_ENOUGH_CREDITS" = "Vous ne disposez pas de suffisamment de crédit pour lancer ce service.\nVotre crédit: %@, Coût du service: %@.\nVous pouvez acheter des crédits via \"Compte -> Gérer mon compte\".";
+
+//Services and Inbox
+"TASK_DELETE_DATE" = "Supprimé le";
+"TASK_END_DATE" = "Terminé le";
+"TASK_LAST_UPDATE" = "Mise à jour le";
+"TASK_PENDING" = "En attente d'une action";
+"TASK_INFO_CANCELLED" = "La tâche a été mise en attente dans la liste de vos tâches en cours.";
+"TASK_INFO_INCOMPLETE" = "La tâche est incomplète et ne peut être finalisée:\n";
+"TASK_INFO_INCOMPLETE_CAPTURE" = "- L'étape de capture '%@' est incomplète: des images requises sont manquantes.";
+"TASK_INFO_INCOMPLETE_FORM" = "- L'étape de formulaire '%@' est incomplète: des champs requis ne sont pas complétés.";
+"TASK_INFO_FINALIZED" = "La tâche est en cours de finalisation. Le document sera disponible dans votre historique lorsque le processus de certification sera terminé.";
+"TASK_ERROR_NO_SUBTASK" = "La configuration de la tâche ou du service est invalide car il n'y a aucune action à effectuer. Veuillez prendre contact avec le fournisseur du service \"%@\" pour comprendre pourquoi.";
+
+//Trash
+"TRASH_CONFIRM_DELETE_ALL" = "Toutes les tâches listées dans la poubelle vont être supprimées définitivement. Êtes-vous sûr de vouloir les supprimer toutes ?";
+
+//QRCode reader
+"QRCODE_READER_SCAN_CODE" = "Numérisez un QR Code Shoot&Prove pour enregistrer un nouveau service, démarrer une nouvelle tâche ou valider un coupon.";
+"QRCODE_ACCOUNT_UPDATED" = "Votre compte a été mis à jour avec le coupon.\nL'application va redémarrer.";
+
+//URL Request
+"REQUEST_PARSE_ERROR" = "Erreur d'analyse de la requête";
+"REQUEST_GONE_ERROR" = "La requête a déjà été exécutée ou est invalide";
+"REQUEST_POST_ERROR" = "Erreur d'exécution de la requête";
+
+//Account
+"ACCOUNT_LASTNAME_PLACEHOLDER" = "Nom";
+"ACCOUNT_FIRSTNAME_PLACEHOLDER" = "Prénom";
+"ACCOUNT_IDENTITIES" = "Identités";
+"ACCOUNT_DEVICES" = "Appareils";
+"ACCOUNT_IAP" = "Achats Intégrés";
+"ACCOUNT_DEVICE_BUILD" = "Shoot&Prove version %@";
+"ACCOUNT_DEVICE_LAST_USAGE" = "Dernière utilisation le %@";
+"ACOUNT_DELETE_IDENTITY_MESSAGE" = "Êtes-vous sûr de vouloir supprimer cette identité ?";
+"ACCOUNT_DELETE_LAST_IDENTITY_MESSAGE" = "La suppression de votre dernière identité supprimera aussi votre compte (toutes vos données seront perdues). Êtes-vous sûr de vouloir la supprimer ?";
+"ACCOUNT_DELETE_DEVICE_MESSAGE" = "La suppression d'un appareil supprimera toutes les données sur l'appareil. Votre compte ainsi que les données associées resteront accessibles sur vos autres appareils. Êtes-vous sûr de vouloir le supprimer ?";
+"ACCOUNT_DELETE_CURRENT_DEVICE" = "Supprimer l'appareil actuel supprimera aussi vos données locales. Votre compte ainsi que les données associées resteront accessibles sur vos autres appareils. Êtes-vous sûr de vouloir le supprimer ?";
+"ACCOUNT_IDENTIFIER_COPIED" = "Votre identifiant a été copié en mémoire. Vous pouvez le coller partout ailleurs.";
+"ACCOUNT_TYPE" = "Type de compte";
+"ACCOUNT_TYPE_FREE" = "Gratuit";
+"ACCOUNT_EXPIRATION" = "Date d'expiration";
+"ACCOUNT_EXPIRATION_VALUE" = "%@ (%ld jours restants)";
+"ACCOUNT_CREDITS" = "Crédits";
+"ACCOUNT_TRANSACTION_CONTROL_ERROR" = "Nous n'avons pas été en mesure de valider l'achat du produit \"%@\" auprès d'Apple. L'erreur suivante apparaît: %@\nVous pouvez soit sélectionner le produit de nouveau pour le restaurer auprès d'iTunes et relancer la validation (aucun coût supplémentaire) ou attendre que l'application retente d'elle même jusqu'à l'obtention de la validation. N'hésitez pas à nous contacter si vous ne récupériez pas votre produit dans un délai raisonnable.";
+
+//Settings
+"SETTINGS_PICTURE" = "Traitement des images";
+"SETTINGS_PICTURE_SIZE" = "Taille des photos";
+"SETTINGS_SCANNER_PAPER_SIZE" = "Taille des documents";
+"SETTINGS_SCANNER_PAPER_SIZE_A4" = "A4";
+"SETTINGS_SCANNER_PAPER_SIZE_A5" = "A5";
+"SETTINGS_SCANNER_PAPER_SIZE_ID1" = "ID-1";
+"SETTINGS_SCANNER_PAPER_SIZE_ANY" = "Autre";
+"SETTINGS_SCANNER_RESOLUTION" = "Résolution";
+"SETTINGS_SCANNER_RESOLUTION_150" = "150 dpi";
+"SETTINGS_SCANNER_RESOLUTION_200" = "200 dpi";
+"SETTINGS_SCANNER_RESOLUTION_300" = "300 dpi";
+"SETTINGS_SCANNER_COLOR_MODE" = "Mode couleur";
+"SETTINGS_SCANNER_COLOR_MODE_BW" = "N&B";
+"SETTINGS_SCANNER_COLOR_MODE_GREY" = "Gris";
+"SETTINGS_SCANNER_COLOR_MODE_COLOR" = "Couleur";
+"SETTINGS_SCANNER_AUTO" = "Numérisation auto.";
+"SETTINGS_CERTIFICATION" = "Options de Certification";
+"SETTINGS_CERTIFICATION_WATERMARK" = "Imprimer le filigrane sur les images";
+"SETTINGS_CERTIFICATION_ACCURACY" = "Précision minimum";
+"SETTINGS_CERTIFICATION_ACCURACY_UNIT" = "mètres";
+"SETTINGS_ITUNES_SHARE" = "Options de Partage";
+"SETTINGS_ITUNES_SHARE_FILES" = "Partager les images (jpeg/tiff)";
+"SETTINGS_ITUNES_SHARE_RENDITIONS" = "Partager les publications (pdf)";
+"SETTINGS_TEST_MODE" = "Options de test";
+"SETTINGS_USE_TEST_SERVER" = "Utiliser le serveur de test";
+"SETTINGS_USE_DEV_SERVER" = "Utiliser le serveur de dev";
+
+//=*************************************************************
+
+//Device authorizations messages
+"DEVICE_CAMERA_DISABLED" = "L'accès à l'appareil photo a été refusé pour l'application.";
+"DEVICE_LOCATION_DISABLED" = "L'accès au service de localisation a été refusé pour l'application.";
+"DEVICE_OPEN_SETTINGS" = "Souhaitez-vous ouvrir les paramètres de l'appareil pour activer les accès nécessaires ?";
+
+//Capture
+"CAPTURE_TASK_REQUIRED" = "Requis";
+"CAPTURE_TASK_OPTIONAL" = "Optionnel";
+"CAPTURE_TASK_PAGE" = "Page %d/%d";
+"CAPTURE_TASK_PICTURE" = "Photo %d/%d";
+
+//Scanner
+"SCANNER_LAYOUT_GUIDE_TOP" = "HAUT";
+"SCANNER_LAYOUT_GUIDE_BOTTOM" = "BAS";
+"SCANNER_PAGE" = "%d page";
+"SCANNER_PAGES" = "%d pages";
+
+//Task details
+"TASK_DETAILS_PAGE" = "Page";
+"TASK_DETAILS_HASH" = "Empreinte (SHA1)";
+"TASK_DETAILS_ACCURACY_UNIT" = "m";
+"TASK_DETAILS_CERTIFIED" = "Certifié sans erreur";
+"TASK_DETAILS_NOT_CERTIFIED" = "Non certifié !";
+"TASK_DETAILS_CERTIFIED_WITH_ERRORS" = "Certifié avec erreurs";
+"TASK_DETAILS_NA" = "N/D";
+"TASK_DETAILS_SELECT" = "Selectionner";
+
+//Task notification
+"TASK_NOTIFICATION_MESSAGE" = "Vous venez de recevoir une nouvelle tâche de la part de %@: %@\nCoût: %@ crédit%@.";
+"TASK_NOTIFICATION_QUESTION" = "Souhaitez-vous la démarrer maintenant ?";
+
+//Map types
+"MAP_TYPE_STANDARD" = "Standard";
+"MAP_TYPE_SATELLITE" = "Satellite";
+"MAP_TYPE_HYBRID" = "Hybride";
+
+//Certification errors
+"CERTIFICATION_ERROR_NO_DATA" = "Impossible de certifier une image vide (aucune donnée fournie).";
+"CERTIFICATION_ERROR_MISSING_LOCATION" = "Impossible de récupérer une géolocalisation dans le temps imparti.";
+"CERTIFICATION_ERROR_DENIED_LOCATION" = "Le service de géolocalisation n'est pas activé pour l'application.";
+"CERTIFICATION_ERROR_LARGER_ACCURACY" = "La précision de la géolocalisation est plus grande que celle demandée.";
+"CERTIFICATION_ERROR_MISSING_TIMESTAMP" = "Impossible de récupérer une date/heure valide depuis Internet dans le temps imparti. L'horloge de l'appareil a été utilisée à la place.";
+"CERTIFICATION_ERROR_MISSING_WATERMARK" = "Impossible d'appliquer le watermark sur l'image.";
+"CERTIFICATION_ERROR_MISSING_EXIF" = "Impossible de compléter des données EXIF de l'image.";
+
+//=*************************************************************
+
+//date/time picker
+"DATE_TIME_PICKER_TITLE_DUAL" = "Selectionner une date & une heure";
+"DATE_TIME_PICKER_TITLE_DATE" = "Selectionner une date";
+"DATE_TIME_PICKER_TITLE_TIME" = "Selectionner une heure";
+
+//Gravatar Picker
+"GRAVATAR_PICKER_MESSAGE" = "Saisissez l'adresse email de votre Gravatar. Si vous ne possédez pas de Gravatar, vous pouvez vous en créer un sur ";
+"GRAVATAR_PICKER_URL" = "https://www.gravatar.com";
+"GRAVATAR_PICKER_EMAIL_PLACEHOLDER" = "Adresse email du Gravatar";
+"GRAVATAR_ERROR_EMAIL_EMPTY" = "Veuillez saisir votre adresse email.";
+"GRAVATAR_ERROR_EMAIL_INVALID" = "Veuillez saisir une adresse email valide.";
+
+//=*************************************************************
+
+//InApp Purchase
+"IAP_DISABLED" = "Les achats intégrés sont désactivés sur votre appareil. Vous ne pourrez pas acheter les Crédits d'Utilisation des Services ou activer le Compte Premium que nous avons préparé pour vous.";
+"IAP_PURCHASE_DONE" = "Achat effectué, mise à jour de votre compte...";
+"IAP_PURCHASE_ERROR" = "Une erreur est survenue lors de la validation de votre achat: %@";
+
+//=*************************************************************
+
+//Sync messages
+"SYNC_SERVICE_DELETED" = "Le service %@ a été supprimé de votre compte car il a été supprimé par son propriétaire.";
+
+//=*************************************************************
+//Generic error messages
+"ERROR_GENERIC" = "Une erreur est apparue";
+"ERROR_400" = "Requête incorrecte";
+"ERROR_401" = "Accès refusé, une authentification est nécessaire";
+"ERROR_403" = "Action interdite, votre compte ne vous permet pas d'effectuer cette action";
+"ERROR_404" = "Introuvable, la ressource n'est pas disponible";
+"ERROR_405" = "Le verbe HTTP utilisé pour accéder à cette page n'est pas autorisé";
+"ERROR_406" = "Le client n'accepte pas le type MIME de la ressource demandée";
+"ERROR_407" = "Authentification proxy requise";
+"ERROR_410" = "La ressource n'est plus disponible, vérifier qu'elle n'a pas déjà été utilisée";
+"ERROR_412" = "La condition préalable a échoué, les informations fournies sont incorrectes";
+"ERROR_413" = "Demande d'une entité trop grande";
+"ERROR_414" = "URI de requête trop longue";
+"ERROR_415" = "Type de support non pris en charge";
+"ERROR_416" = "Plage demandée non satisfaisante";
+"ERROR_417" = "L'exécution a échoué";
+"ERROR_423" = "Erreur de verrouillage";
+"ERROR_429" = "Trop de demandes, veuillez réessayer plus tard.";
+"ERROR_500" = "Erreur interne du serveur, veuillez réessayer plus tard";
+"ERROR_501" = "Les valeurs d'en-tête spécifient une configuration qui n'est pas implémentée";
+"ERROR_502" = "Le serveur Web a reçu une réponse invalide en agissant comme une passerelle ou un proxy";
+"ERROR_504" = "Délai de la passerelle expiré, veuillez réessayer plus tard";
+"ERROR_505" = "La version HTTP n'est pas supportée";
+
+//=*************************************************************
+
+//Buttons
+"BUTTON_OK" = "OK";
+"BUTTON_NO" = "Non";
+"BUTTON_YES" = "Oui";
+"BUTTON_CANCEL" = "Annuler";
+"BUTTON_ACCEPT" = "Accepter";
+"BUTTON_CONFIRM" = "Oui, je confirme";
+"BUTTON_VALIDATE" = "Confirm";
+"BUTTON_RETRY" = "Essayer encore ?";
+"BUTTON_START_TASK" = "Démarrer";
+"BUTTON_SHOW_IDENTIFIER" = "Afficher mon identifiant";
+"BUTTON_COPY_IDENTIFIER" = "Copier";
+"BUTTON_FAKE" = "              ";
+"BUTTON_SETTINGS" = "Paramètres";
+"BUTTON_FORGOTTEN_PASSWORD" = "Mot de passe oublié";
+"BUTTON_SKIP" = "Passer";
+
+//Message box titles
+"TITLE_ERROR" = "Erreur";
+"TITLE_WARNING" = "Avertissement";
+"TITLE_INFO" = "Information";
+"TITLE_NO_ACCOUNT" = "Compte inconnu";
+"TITLE_CANT_BUY" = "Achat impossible !";
+"TITLE_NOT_ENOUGH_CREDITS" = "Plus de crédit";
+"TITLE_GRAVATAR" = "Gravatar";
+"TITLE_MAP" = "Localisation";
+"TITLE_CERTIFICATION_ERRORS" = "Erreurs de Certification";
+"TITLE_QRCODE_READER" = "Scanner un QR Code";
+"TITLE_FREE_TASK" = "Créer un document";
+"TITLE_CONFIRM" = "Veuillez confirmer";
+"TITLE_TERMS" = "Termes d'utilisation";
+"TITLE_REGISTER_PHONE" = "Téléphone mobile";
+"TITLE_REGISTER" = "Connexion ou inscription";

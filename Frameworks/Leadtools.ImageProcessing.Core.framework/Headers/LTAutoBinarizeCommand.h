@@ -1,0 +1,30 @@
+//
+//  LTAutoBinarizeCommand.h
+//  Leadtools.ImageProcessing.Core
+//
+//  Copyright © 1991-2016 LEAD Technologies, Inc. All rights reserved.
+//
+
+typedef NS_OPTIONS(NSUInteger, LTAutoBinarizeCommandFlags) {
+    LTAutoBinarizeCommandFlagsUseAutoPreProcessing       = 0x00000000,
+    LTAutoBinarizeCommandFlagsDontUsePreProcessing       = 0x00000001,
+    LTAutoBinarizeCommandFlagsUseBackGroundElimination   = 0x00000002,
+    LTAutoBinarizeCommandFlagsUseColorLeveling           = 0x00000004,
+    LTAutoBinarizeCommandFlagsUseAutoThreshold           = 0x00000000,
+    LTAutoBinarizeCommandFlagsUseUserThreshold           = 0x00000010,
+    LTAutoBinarizeCommandFlagsUsePercentileThreshold     = 0x00000020,
+    LTAutoBinarizeCommandFlagsUseMedianThreshold         = 0x00000040
+};
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface LTAutoBinarizeCommand : LTRasterCommand
+
+@property (nonatomic, assign) NSUInteger factor;
+@property (nonatomic, assign) LTAutoBinarizeCommandFlags flags;
+
+- (instancetype)initWithFactor:(NSUInteger)factor flags:(LTAutoBinarizeCommandFlags)flags NS_DESIGNATED_INITIALIZER;
+
+@end
+
+NS_ASSUME_NONNULL_END
